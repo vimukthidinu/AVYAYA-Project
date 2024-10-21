@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link href="css/style.css" rel="stylesheet" />
+</head>
+<body>
+    <!-- header section strats -->
+    <header class="header_section">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg custom_nav-container">
+              <div class="fk_width" id="">
+                <div class="custom_menu-btn">
+                  <button onclick="openNav()">
+                    <span class="s-1"> </span>
+                    <span class="s-2"> </span>
+                    <span class="s-3"> </span>
+                  </button>
+                </div>
+                <div id="myNav" class="overlay">
+                  <div class="overlay-content">
+                    <a href="index.html">HOME</a>
+                    <a href="shop.html">WOMAN</a>
+                    <a href="shop.html">MEN</a>
+                    <a href="shop.html">MEN</a>
+                  </div>
+                </div>
+              </div>
+            
+            <span>
+                          <!-- Centered AVYAYA Logo -->
+            <div class="centered-logo">
+                <a class="navbar-brand" href="index.html">
+                    <span>AVYAYA</span>
+                </a>
+            </div>
+            </span>
+          </a>
+          <div class="ml-auto">
+            <form class="form-inline my-2 my-lg-0 mb-3 mb-lg-0">
+              <button class="btn my-2 my-sm-0 nav_cart-btn" type="button" onclick="toggleCartDropdown()">
+              </button>
+              <button class="btn my-2 my-sm-0 nav_search-btn" type="submit"></button>
+              
+              <div id="cartDropdown" class="cart-dropdown-content">
+                <!-- Add your cart items or content here -->
+                <p>Your cart is empty.</p>
+                <a href="cart.html">Go to cart</a>
+              </div>
+            </form>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <div class="product-page">
+        <!-- Product Images -->
+        <div class="product-images">
+            <img src="image/icons/others/4.jpg" alt="Product Image 1" class="main-img">
+            <img src="image/icons/others/4.jpg" alt="Product Image 2" class="main-img">
+            <img src="image/icons/others/4.jpg" alt="Product Image 3" class="main-img">
+            <img src="image/icons/others/4.jpg" alt="Product Image 4" class="main-img">
+        </div>
+
+        <!-- Product Details -->
+        <div class="product-details">
+            <h1>HUF & DEE Women's Crew Neck T-Shirt</h1>
+            <p class="price">LKR 2,990.00 </p>
+
+            <ul class="product-info">
+                <li><strong>Brand:</strong> HUF & DEE</li>
+                <li><strong>Texture:</strong> Plain</li>
+                <li><strong>Neck:</strong> Crew Neck</li>
+                <li><strong>Sleeve:</strong> Short</li>
+                <li><strong>Material:</strong> Single Jersey</li>
+                <li><strong>Embellishment:</strong> Screen Print & Embroidery</li>
+            </ul>
+
+            <p class="note">*Product color may vary slightly due to different lighting conditions during photography and individual monitor settings*</p>
+
+            <!-- Product Options -->
+            <div class="product-options">
+                <div class="color-option">
+                    <p><strong>Colour:</strong> White</p>
+                    <img src="image/icons/others/4.jpg" alt="White T-shirt">
+                </div>
+                <div class="size-option">
+                    <p><strong>Size:</strong></p>
+                    <button class="size-btn">Small</button>
+                    <button class="size-btn">Medium</button>
+                    <button class="size-btn">Large</button>
+                    <button class="size-btn">XL</button>
+                    <button class="size-btn">2XL</button>
+                </div>
+                <div class="quantity">
+                    <button class="qty-btn">-</button>
+                    <input type="number" value="1" min="1">
+                    <button class="qty-btn">+</button>
+                </div>
+
+                <button class="add-to-cart">Add To Cart</button>
+
+                <!-- Shipping & Delivery -->
+                <div class="shipping">
+                    <p>Estimated shipping time (2 - 3 working days)</p>
+                    <p><strong>Cash on delivery</strong></p>
+                    <p><strong>Return & Cancellations</strong></p>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- footer section -->
+  <footer class="footer_section layout_padding2">
+    <div class="social_container">
+      <h2>
+        AVYAYA
+      </h2>
+      <h6>Specializes in providing high-quality, stylish products for your wardrobe.</h6>
+      <div class="social-box">
+        <hr>
+        <div>
+          <a href="">
+            <img src="images/fb.png" alt="">
+          </a>
+        </div>
+        <hr>
+        <div>
+          <a href="">
+            <img src="images/twitter.png" alt="">
+          </a>
+        </div>
+        <hr>
+        <div>
+          <a href="">
+            <img src="images/insta.png" alt="">
+          </a>
+        </div>
+        <hr>
+      </div>
+    </div>
+    <p>
+      &copy; 2024 All Rights Reserved. Design by
+      <a href="https://html.design/">Hustle Squad</a>
+    </p>
+  </footer>
+  <!-- footer section -->
+
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  </script>
+  <script>
+    function openNav() {
+      document.getElementById("myNav").classList.toggle("menu_width");
+      document
+        .querySelector(".custom_menu-btn")
+        .classList.toggle("menu_btn-style");
+
+    }
+  </script>
+
+</body>
+
+</html>
+</body>
+</html>

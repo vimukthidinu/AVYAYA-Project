@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="checkout-container">
+        <!-- Left Side: Contact Information and Shipping Address -->
+        <div class="left-section">
+            <h2>Contact Information</h2>
+            <p>Enter valid email which we can use to contact you.</p>
+            <input type="email" placeholder="Email Address" class="input-field" required>
+
+            <h2>Shipping Address</h2>
+            <p>Fill the following fields according to where the order is to be delivered.</p>
+
+            <label for="country">Country</label>
+            <select id="country" class="input-field">
+                <option value="sri-lanka" selected>Sri Lanka</option>
+                <option value="india">India</option>
+                <option value="usa">USA</option>
+                <option value="uk">UK</option>
+            </select>
+
+            <div class="name-container">
+                <input type="text" placeholder="First Name" class="input-field half-width" required>
+                <input type="text" placeholder="Last Name" class="input-field half-width" required>
+            </div>
+
+            <input type="tel" placeholder="Contact Number" class="input-field" required>
+            <input type="text" placeholder="Address" class="input-field" required>
+            <input type="text" placeholder="City" class="input-field" required>
+
+            <div class="checkout-actions">
+                <a href="cart.html" class="back-to-cart">Return to Cart</a>
+
+                <a href="index.html">
+                    <button class="continue-btn">Continue to Shipping</button>
+                </a>
+            </div>
+        </div>
+
+        <!-- Right Side: Order Summary -->
+        <div class="right-section">
+            <div class="order-summary">
+                <div class="product">
+                    <img src="image/icons/others/4.jpg" alt="Product Image" class="product-image">
+                    <div class="product-details">
+                        <p>HUF & DEE WOMEN'S CREW NECK T-SHIRT</p>
+                        <p>Color: White</p>
+                        <p>Size: Small</p>
+                        <p class="price">2990.00 LKR</p>
+                    </div>
+                </div>
+                <div class="order-totals">
+                    <div class="total-item">
+                        <span>Gross Total:</span>
+                        <span>2990.00 LKR</span>
+                    </div>
+                    <div class="total-item">
+                        <span>Delivery charge:</span>
+                        <span>0.00 LKR</span>
+                    </div>
+                    <div class="total-item">
+                        <span><strong>Net Total:</strong></span>
+                        <span><strong>2990.00 LKR</strong></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

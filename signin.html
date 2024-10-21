@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Clothing Store Sign-in">
+    <meta name="author" content="">
+    <title>Sign in - Fashion Store</title>
+
+    <!-- Google Fonts for better typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome for Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                url('https://source.unsplash.com/featured/?fashion') no-repeat center center/cover;
+            color: #fff;
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.9);
+            width: 350px;
+            padding: 40px 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
+            text-align: center;
+            color: #333;
+        }
+
+        h1 {
+            font-size: 28px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+
+        .form-control:focus {
+            border-color: #ff4081;
+            box-shadow: none;
+            outline: none;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 12px;
+            background-color: #ff4081;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #e60073;
+        }
+
+        .checkbox {
+            margin: 15px 0;
+            text-align: left;
+        }
+
+        .checkbox input {
+            margin-right: 8px;
+        }
+
+        .forgot-password {
+            margin-top: 15px;
+            display: inline-block;
+            font-size: 14px;
+            color: #ff4081;
+            text-decoration: none;
+        }
+
+        .forgot-password:hover {
+            text-decoration: underline;
+        }
+
+        .social-buttons {
+            margin-top: 20px;
+        }
+
+        .social-buttons a {
+            text-decoration: none;
+            color: #fff;
+            background-color: #4267B2;
+            padding: 10px 15px;
+            border-radius: 5px;
+            margin-right: 10px;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+
+        .social-buttons a i {
+            margin-right: 5px;
+        }
+
+        .social-buttons a:hover {
+            background-color: #365899;
+        }
+
+        .sign-up-link {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+
+        .sign-up-link a {
+            color: #ff4081;
+            text-decoration: none;
+        }
+
+        .sign-up-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Sign In</h1>
+
+        <form>
+            <input type="email" class="form-control" placeholder="Email address" required>
+            <input type="password" class="form-control" placeholder="Password" required>
+
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox"> Remember me
+                </label>
+            </div>
+
+            <button type="submit" class="btn">Sign In</button>
+
+            <a href="#" class="forgot-password">Forgot your password?</a>
+
+            <div class="social-buttons">
+                <a href="#" class="facebook-btn"><i class="fab fa-facebook-f"></i> Facebook</a>
+                <a href="#" class="google-btn" style="background-color: #DB4437;"><i class="fab fa-google"></i> Google</a>
+            </div>
+
+            <p class="sign-up-link">Don't have an account? <a href="signup.html">Sign Up</a></p>
+        </form>
+    </div>
+
+</body>
+
+</html>
